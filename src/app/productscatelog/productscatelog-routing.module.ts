@@ -4,12 +4,15 @@ import { FullviewproductComponent } from './fullviewproduct/fullviewproduct.comp
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { ProductsubviewComponent } from './productsubview/productsubview.component';
 import { RatingComponent } from './rating/rating.component';
+import { MenulistComponent } from './menulist/menulist.component';
 
 const routes: Routes = [
+  {path:"",component:LandingpageComponent},
   {path:"fullviewproduct",component:FullviewproductComponent},
-  {path:"landingpage",component:LandingpageComponent},
+  {path:"menulist",component:MenulistComponent},
   {path:"productsubview",component:ProductsubviewComponent},
-  {path:"rating",component:RatingComponent}
+  {path:"rating",component:RatingComponent},
+
 ];
 
 @NgModule({

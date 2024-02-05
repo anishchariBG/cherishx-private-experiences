@@ -22,8 +22,11 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
   ],
   imports: [
     CommonModule,
-    ProductscatelogRoutingModule, CarouselModule
+    ProductscatelogRoutingModule, CarouselModule,
+    BrowserModule
   ],
-  exports: [MenulistComponent] 
+  exports: [
+    MenulistComponent
+  ] 
 })
 export class ProductscatelogModule { }
