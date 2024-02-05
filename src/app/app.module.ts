@@ -5,8 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthModule } from '../app/auth/auth.module';
 import { ProductscatelogModule } from './productscatelog/productscatelog.module';
-import { CommonModule } from '@angular/common';
-
+import { HeadertopModule } from './headertop/headertop.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +16,7 @@ import { CommonModule } from '@angular/common';
     AppRoutingModule,
     AuthModule,
     ProductscatelogModule,
-    CommonModule 
+    HeadertopModule
   ],
   providers: [
     provideClientHydration()

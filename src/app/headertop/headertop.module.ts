@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
-import { CommonRoutingModule } from './common-routing.module';
+import { HeadertopRoutingModule } from './headertop-routing.module';
 import { HeaderComponent } from './header/header.component';
 import { HelpcenterComponent } from './helpcenter/helpcenter.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -13,7 +14,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     NavbarComponent
   ],
   imports: [
-    CommonRoutingModule
+    CommonModule,
+    HeadertopRoutingModule
   ]
 })
-export class CommonModule { }
+export class HeadertopModule { }

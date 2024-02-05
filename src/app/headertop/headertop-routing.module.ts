@@ -5,8 +5,8 @@ import { HelpcenterComponent } from './helpcenter/helpcenter.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 const routes: Routes = [
-  {path:"head", component:HeaderComponent},
-  {path:"helpcenter" , component:HelpcenterComponent},
+  {path:"header",component:HeaderComponent},
+  {path:"helpcenter",component:HelpcenterComponent},
   {path:"navbar", component:NavbarComponent}
 ];
 
@@ -14,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class CommonRoutingModule { }
+export class HeadertopRoutingModule { }

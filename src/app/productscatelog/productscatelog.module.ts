@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { ProductscatelogRoutingModule } from './productscatelog-routing.module';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { ProductsubviewComponent } from './productsubview/productsubview.component';
@@ -21,9 +20,9 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
     MenulistComponent
   ],
   imports: [
-    CommonModule,
     ProductscatelogRoutingModule, CarouselModule,
-    BrowserModule
+    BrowserModule,
+    CommonModule
   ],
   exports: [
     MenulistComponent

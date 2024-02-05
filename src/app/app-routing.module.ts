@@ -7,9 +7,10 @@ const routes: Routes = [
     loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
   },
   {
-    path: 'common',
-    loadChildren: () => import('./common/common.module').then(m => m.CommonModule)
+    path: 'headertop',
+    loadChildren: () => import('./headertop/headertop.module').then(m => m.HeadertopModule)
   },
+   
   {
     path: 'productscatelog',
     loadChildren: () => import('./productscatelog/productscatelog.module').then(m => m.ProductscatelogModule)

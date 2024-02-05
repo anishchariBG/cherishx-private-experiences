@@ -7,14 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'reference';
-    user = [
-      {
-"name":"aravind","id":1
-    },{
-      "name":"vignesh",
-      "id":2
-    }
+//     user = [
+//       {
+// "name":"aravind","id":1
+//     },{
+//       "name":"vignesh",
+//       "id":2
+//     }
     
-  ]
+  // ]
   
 }
