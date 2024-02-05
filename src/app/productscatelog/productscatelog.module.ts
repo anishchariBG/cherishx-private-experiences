@@ -6,6 +6,10 @@ import { LandingpageComponent } from './landingpage/landingpage.component';
 import { ProductsubviewComponent } from './productsubview/productsubview.component';
 import { FullviewproductComponent } from './fullviewproduct/fullviewproduct.component';
 import { RatingComponent } from './rating/rating.component';
+import { MenulistComponent } from './menulist/menulist.component';
+
+import { CarouselModule } from 'primeng/carousel'; 
+import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 
 
 @NgModule({
@@ -13,11 +17,13 @@ import { RatingComponent } from './rating/rating.component';
     LandingpageComponent,
     ProductsubviewComponent,
     FullviewproductComponent,
-    RatingComponent
+    RatingComponent,
+    MenulistComponent
   ],
   imports: [
     CommonModule,
-    ProductscatelogRoutingModule
-  ]
+    ProductscatelogRoutingModule, CarouselModule
+  ],
+  exports: [MenulistComponent] 
 })
 export class ProductscatelogModule { }
