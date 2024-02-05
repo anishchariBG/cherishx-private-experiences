@@ -7,16 +7,17 @@ import { AuthModule } from '../app/auth/auth.module';
 import { ProductscatelogModule } from './productscatelog/productscatelog.module';
 import { CommonModule } from '@angular/common';
 
+import { MenulistComponent } from './productscatelog/menulist/menulist.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AuthModule,
     ProductscatelogModule,
-    CommonModule
+    CommonModule 
   ],
   providers: [
     provideClientHydration()

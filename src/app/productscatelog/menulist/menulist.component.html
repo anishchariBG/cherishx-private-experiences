@@ -1,0 +1,8 @@
+
+  <p-carousel [value]="items" [numVisible]="itemsPerSlide" [numScroll]="1" [circular]="true">
+    <ng-template let-item pTemplate="item">
+      <img src="{{item.image}}" alt="{{item.caption}}" style="width:100%">
+      <div class="caption">{{item.caption}}</div>
+    </ng-template>
+  </p-carousel>
+  
