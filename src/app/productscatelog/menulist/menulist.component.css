@@ -1,0 +1,11 @@
+.carouselcontainer{
+    height: 100px; box-sizing: border-box; width: 100%; 
+}
+.carousel-caption {
+    color: rgb(15, 15, 15);  
+ 
+  }
+  .slides{flex: 1 1 auto; position: relative; width: 128px;}
+
+ img{display: block;}
+
