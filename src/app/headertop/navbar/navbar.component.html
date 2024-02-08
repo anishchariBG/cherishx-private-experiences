@@ -1,1 +1,148 @@
-<p>navbar works!</p>
+<div class="nav-main" [class.nav_change]="nav_variable">
+    <div class="container p-0">
+      <div class="nav-menu">
+        <div class="row">
+          <div class="main_topnavbar">
+            <div class="container-fluid _top-traction-bar"></div>
+            <div class="nav-logo">
+              <img src="../assets/images/cherishx-logo-website.png" alt="logo">
+            </div>
+          </div>
+          <div class="dropdown_maindiv">
+            <div class="nav-response">
+              <div class="dropdown">
+                <a class='nav-link1'>Birthdays <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+                <div class="dropdown-content">
+                  <div class="dropdown-flx1">
+                    <div>hai</div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a class='nav-link1'>Anniversary <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+                <div class="dropdown-content">
+                  <div class="dropdown-flx1">
+                    <div>Anniversary</div>
+                    
+                  </div>
+                </div>
+              </div>
+              
+              <div class="dropdown">
+                <a class='nav-link1'>Candlelight Dinners <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+                <div class="dropdown-content">
+                  <div class="dropdown-flx1">
+                    <div>Candlelight Dinners</div>
+                    
+                  </div>
+                </div>
+              </div>
+              
+              <div class="dropdown">
+                <a class='nav-link1'>Digital Gifts <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+                <div class="dropdown-content">
+                  <div class="dropdown-flx1">
+                    <div>Digital Gifts</div>
+                    
+                  </div>
+                </div>
+              </div>
+              
+              <div class="dropdown">
+                <a class='nav-link1'>Decorations <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+                <div class="dropdown-content">
+                  <div class="dropdown-flx1">
+                    <div>Decorations</div>
+                    
+                  </div>
+                </div>
+              </div>
+              
+              <div class="dropdown">
+                <a class='nav-link1'>Kid's Celebrations <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+                <div class="dropdown-content">
+                  <div class="dropdown-flx1">
+                    <div>Kid's Celebrations</div>
+                    
+                  </div>
+                </div>
+              </div>
+                 
+              <div class="dropdown">
+                <a class='nav-link1'>Festive Celebrations <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+                <div class="dropdown-content">
+                  <div class="dropdown-flx1">
+                    <div>Festive Celebrations </div>
+                    
+                  </div>
+                </div>
+              </div>
+                
+              <div class="dropdown">
+                <a class='nav-link1 valenties'>Valentines <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+                <div class="dropdown-content">
+                  <div class="dropdown-flx1">
+                    <div>Valentines</div>
+                    
+                  </div>
+                </div>
+              </div>
+                
+                <a class='nav-link'><span class="party_store">Party Store </span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<div class="nav-ng">
+    <mat-sidenav-container class="sidenav-container">
+      <mat-sidenav #drawer class="sidenav" [ngClass]="{hidden: !(isHandset$ | async)}" fixedInViewport="false"
+        [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'"
+        [opened]="(isHandset$ | async) === false">
+        <mat-toolbar color="primary" style="z-index: 2;">
+        <div>
+          <span>Hi, Guest</span>
+        </div>
+        </mat-toolbar>
+        <mat-nav-list>
+          <a mat-list-item routerLinkActive="active" aria-current="page" routerLink="home">Birthdays</a>
+          <a mat-list-item routerLinkActive="active" routerLink="about-us">Anniversary</a>
+          <a mat-list-item routerLinkActive="active" routerLink="services">Candlelight Dinners</a>
+          <a mat-list-item routerLinkActive="active" routerLink="clients-review">Digital Gifts</a>
+          <a mat-list-item routerLinkActive="active" routerLink="clients" tabindex="-1">Decorations</a>
+          <a mat-list-item routerLinkActive="active" routerLink="clients" tabindex="-1">Kid's Celebrations</a>
+          <a mat-list-item routerLinkActive="active" routerLink="clients" tabindex="-1">Festive Celebrations</a>
+          <a mat-list-item routerLinkActive="active" routerLink="clients" tabindex="-1">Valentines</a>
+          <a mat-list-item routerLinkActive="active" routerLink="clients" tabindex="-1"><span class="party_store">Party Store </span></a>
+        </mat-nav-list>
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <mat-toolbar class="position-fixed">
+          <mat-toolbar-row>
+            <div class="email">
+              <!-- <span class="material-symbols-outlined">mark_email_unread</span> -->
+              <!-- <mailto:h4>info@carehealth.ind.in</h4> -->
+            </div>
+            <div class="contact">
+              <!-- <span class="material-symbols-outlined">call</span>
+              <h4>+91 9492123402</h4> -->
+            </div>
+          </mat-toolbar-row>
+          <mat-toolbar-row>
+            <!-- <img src="../../assets/logo.png" alt="logo" class="angular-logo"> -->
+            <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
+              *ngIf="isHandset$ | async">
+              <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+            </button>
+          </mat-toolbar-row>
+        </mat-toolbar>
+        <router-outlet></router-outlet>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+
+
+

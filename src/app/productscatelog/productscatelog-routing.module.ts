@@ -12,7 +12,7 @@ const routes: Routes = [
   {path:"menulist",component:MenulistComponent},
   {path:"productsubview",component:ProductsubviewComponent},
   {path:"rating",component:RatingComponent},
-
+  {path:"**",component:LandingpageComponent}
 ];
 
 @NgModule({

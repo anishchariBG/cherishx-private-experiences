@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { MyServiceService } from './my-service.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'reference';
+  constructor(private myService:MyServiceService){}
 //     user = [
 //       {
 // "name":"aravind","id":1
