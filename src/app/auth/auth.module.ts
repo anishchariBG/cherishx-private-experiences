@@ -2,8 +2,7 @@ import { NgModule } from '@angular/core';
 import { AuthRoutingModule } from './auth-routing.module';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
-import { CommonModule } from '@angular/common';
-
+import { ConfirmDialogModule } from 'primeng/confirmdialog';
 @NgModule({
   declarations: [
     LoginComponent,
@@ -11,7 +10,8 @@ import { CommonModule } from '@angular/common';
   ],
   imports: [
     AuthRoutingModule,
-    CommonModule
+    ConfirmDialogModule
+    
   ]
 })
 export class AuthModule { }

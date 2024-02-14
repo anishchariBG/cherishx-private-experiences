@@ -4,14 +4,19 @@ import { HeaderComponent } from './header/header.component';
 import { HelpcenterComponent } from './helpcenter/helpcenter.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
+
 const routes: Routes = [
-  {path:"header",component:HeaderComponent},
-  {path:"helpcenter",component:HelpcenterComponent},
-  {path:"navbar", component:NavbarComponent}
+ {path:"header",component:HeaderComponent},
+ {path:"help",component:HelpcenterComponent},
+ {path:"navbar",component:NavbarComponent}
+  
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [
+    // RouterModule.forRoot(routes),
+    RouterModule.forChild(routes)
+  ],
   exports: [RouterModule]
 })
 export class HeadertopRoutingModule { }
