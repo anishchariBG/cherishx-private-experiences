@@ -18,4 +18,12 @@
     <div class="card flex justify-content-center">
       <p-button label="Check" icon="pi pi-check">hai</p-button>
   </div> -->
+  <div *ngIf="data">
+    <p>Data from Service</p>
+    <div *ngFor="let task of data">
+      <p>{{ task.name }}</p>
+      <p>{{task.id}}</p>
+      <!-- <p>Price: {{ task.price | currency:'USD':'symbol' }}</p> -->
+    </div>
+  </div>
 <router-outlet />

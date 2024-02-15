@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { of, Observable } from 'rxjs';
+// import { of, Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
@@ -19,12 +19,20 @@ export class MyServiceService {
 //   age:"21"
 // }
 //  ]
+
+  //  getemploylist():Observable<any>{
+  //   return of(this.url);
+  //  }
+  public url = "http://localhost:3000/dummyjson";
   constructor(public http:HttpClient) {
     
    }
-  //  getemploylist():Observable<any>{
-  //   return of(this.emplydata);
-  //  }
+ getdata(callback:(data:any)=>void, errorcallback:(erorr:any)=>void):void{
+  this.http.get(this.url).subscribe(
+    (data)=>callback(data),
+    (error)=>errorcallback(error)
+  );
+ }
 }
 
 
